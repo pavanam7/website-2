@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: #f1f1f1;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
