@@ -1,9 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class ThemeService {
+  isDarkMode = signal(false);
 
-  constructor() { }
+  toggleTheme() {
+    this.isDarkMode.update((current) => !current);
+    document.body.classList.toggle('dark-mode', this.isDarkMode());
+  }
 }
